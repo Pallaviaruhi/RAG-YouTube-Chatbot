@@ -15,7 +15,7 @@ def store_embeddings(chunks, persist_directory="db"):
     )
     
     vectordb.persist()
-    print(f"✅ Stored {len(chunks)} chunks in ChromaDB.")
+    print(f"Stored {len(chunks)} chunks in ChromaDB.")
     return vectordb
 
 
