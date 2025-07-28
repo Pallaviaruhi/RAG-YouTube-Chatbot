@@ -5,4 +5,4 @@ if __name__ == "__main__":
     query = input("Ask a question about the video: ")
     answer = chain.invoke(query)
     
-    print("\n💬 Answer:\n", answer.content)
+    print("\n Answer:\n", answer.content)
