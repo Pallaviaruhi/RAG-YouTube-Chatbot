@@ -7,7 +7,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableMap, RunnablePassthrough, RunnableLambda, RunnableSequence
 load_dotenv()
 import os
-#print("✅ TOKEN:", os.getenv("HUGGINGFACEHUB_API_TOKEN"))
+#print("TOKEN:", os.getenv("HUGGINGFACEHUB_API_TOKEN"))
 
 
 
