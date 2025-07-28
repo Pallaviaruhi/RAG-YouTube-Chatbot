@@ -6,19 +6,19 @@ def run(video_url):
     transcript = fetch_transcript(video_url)
     
     if not transcript:
-        print("❌ Failed to fetch transcript.")
+        print("Failed to fetch transcript.")
         return
 
     print("[2] Splitting transcript into chunks...")
     chunks = chunk_text(transcript)
     
-    print(f"✅ Total chunks: {len(chunks)}")
-    print("🔍 First chunk preview:\n")
+    print(f"Total chunks: {len(chunks)}")
+    print("First chunk preview:\n")
     print(chunks[0][:500])
     from embed_store import store_embeddings
 
     
-    print(f"✅ Total chunks: {len(chunks)}")
+    print(f"Total chunks: {len(chunks)}")
 
     print("[3] Storing chunks in ChromaDB...")
     store_embeddings(chunks)
